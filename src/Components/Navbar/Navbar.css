@@ -1,0 +1,64 @@
+.navbar_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 60px;
+}
+
+.nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 95vw;
+    margin: auto;
+}
+
+.name{
+    font-weight: 500;
+}
+.connect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+    height: 60px;
+}
+
+.connect>a>img{
+    width: 20px;
+    transition: all ease 500ms;
+}
+
+.connect>.resume:hover{
+    transition: all ease 500ms;
+}
+
+.nav>a,.connect>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.resume-text{
+    font-size: smaller;
+    font-weight: 600;
+}
+
+.connect>a>img:hover,.resume:hover{
+    opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+    .connect{
+        width: 150px;
+    }
+    .resume-text{
+        font-size: 0.9em;
+    }
+}

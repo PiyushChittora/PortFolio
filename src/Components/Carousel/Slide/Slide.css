@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+.Home_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    width: 80vw;
+}
+
+.right_container {
+    position: relative;
+    overflow: hidden;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    animation: 1s ease-out 1 containerAnimate;
+}
+
+@keyframes containerAnimate {
+    from {
+        height: 55%;
+    }
+
+    to {
+        height: 75%;
+    }
+}
+
+.box {
+    position: absolute;
+    width: 52vw;
+    height: 75vh;
+    transform: translateX(100%);
+}
+
+@keyframes boxAnimate {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.blue {
+    z-index: 103;
+    background-color: #072142;
+    animation: 0.7s ease 1 boxAnimate;
+}
+
+.red {
+    z-index: 102;
+    background-color: #ff4d5a;
+    animation: 0.8s ease-in-out 1 boxAnimate;
+}
+
+.right_container>img {
+    max-width: 52vw;
+    object-fit: cover;
+    object-position: left;
+    animation: 1s ease-out 1 imgAnimate;
+}
+
+@keyframes imgAnimate {
+    from {
+        width: 43vw;
+    }
+
+    to {
+        width: 52vw;
+    }
+}
+
+.contact_container {
+    display: flex;
+    align-items: center;
+    width: 52vw;
+    height: 75vh;
+    animation: 1s ease-out 1 contactAnimate;
+    background-image: url('../../../assets/connect.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact_subcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes contactAnimate {
+    from {
+        width: 43vw;
+    }
+
+    to {
+        width: 52vw;
+    }
+}
+
+.contact {
+    margin: 1em;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    width: 16vw;
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.2em;
+    transition: all ease 0.5s;
+}
+
+.contact:hover {
+    opacity: 0.8;
+}
+
+.contact>img {
+    position: relative;
+    width: 18px;
+    margin-right: 0.3em;
+}
+
+.wrap {
+    width: 52vw;
+    height: 75vh;
+    padding: 0;
+    overflow: hidden;
+}
+
+.frame {
+    width: 69.33vw;
+    height: 100vh;
+    border: 0px;
+    outline: none;
+    border: none;
+    zoom: 0.75;
+    -moz-transform: scale(0.75);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.75);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: 0 0;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .frame {
+      zoom: 1;
+    }
+  }
+
+.idx-container {
+    z-index: 1000;
+    position: absolute;
+    left: 85vw;
+    bottom: 10vh;
+    overflow: hidden;
+}
+
+.idx-text {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    font-size: 6em;
+    font-family: 'DM Serif Text', serif;
+    text-shadow: 0 0px 10px #00000070;
+    animation: 1s ease-out 1 idxAnimate;
+}
+
+@keyframes idxAnimate {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 800px) {
+    .Home_container {
+        width: 90vw;
+        height: 80vh;
+    }
+
+    .right_container {
+        height: 40vh;
+    }
+
+    @keyframes containerAnimate {
+        from {
+            height: 30vh;
+        }
+
+        to {
+            height: 40vh;
+        }
+    }
+
+    .box {
+        width: 101%;
+        height: 40vh;
+    }
+
+    .right_container>img {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    @keyframes imgAnimate {
+        from {
+            width: 80%;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    .contact_container {
+        width: 100%;
+        height: 40vh;
+    }
+
+    @keyframes contactAnimate {
+        from {
+            width: 80%;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    .contact {
+        margin: 1em;
+        padding: 0em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 1.5em;
+        width: 35%;
+    }
+
+    .idx-container {
+        left: 5vw;
+        bottom: 80vh;
+    }
+
+    .responsive {
+        display: none;
+    }
+
+    .wrap {
+        width: 80vw;
+        height: 40vh;
+    }
+    
+    .frame {
+        width: 160vw;
+        height: 80vh;
+        zoom: 0.5;
+        -moz-transform: scale(0.5);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.5);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+    }
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        .frame {
+          zoom: 1;
+        }
+      }
+}

@@ -1,0 +1,158 @@
+.about_container {
+    z-index: 100000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: all ease-out 1s;
+    animation: 0.6s ease 1 AboutAnimate;
+    color: black;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.about_container{
+    scroll-behavior: smooth;
+}
+.about_container::-webkit-scrollbar {
+    display: none;
+}
+
+ 
+@keyframes AboutAnimate {
+    from {
+        top: 100%;
+    }
+
+    to {
+        top: 60px;
+    }
+}
+
+.btn.close {
+    position: fixed;
+    top: 6em;
+    right: 2em;
+    margin-top: 0;
+    width: auto;
+}
+
+.about {
+    padding-left: 2em;
+    padding-right: 2em;
+    max-width: 40em;
+    margin: auto;
+}
+.cross {
+    padding: 5px;
+}
+
+.section{
+    margin-top: 7em;
+    margin-bottom: 7em;
+}
+
+.header {
+    font-size: 2em;
+    width: fit-content;
+    background: linear-gradient(135deg, #072142 0%, #5f1d53 50%, #FF4D5A 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.about_content{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Text{
+    max-width: 28em;
+    text-align: justify;
+    font-weight: 300;
+}
+.profile {
+    max-width: 10em;
+    margin-left: 1em;
+}
+
+.passion_content{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.passion_card{
+    max-width: 11em;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.icon{
+    max-width: 4em;
+}
+.icon_head{
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+.passion-text{
+    font-weight: 300;
+    margin-top: 0.5em;
+    text-align: justify;
+}
+
+.skill-content{
+    display: flex;
+    justify-content: center;
+}
+.skill-img{
+    width: 80%;
+}
+.skill{
+    margin-bottom: 2em;
+}
+
+.footer{
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(135deg, #072142 0%, #5f1d53 50%, #FF4D5A 100%);
+}
+.footer-about{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 300;
+    color: white; 
+    text-align: center;
+}
+
+.footer-about>a{
+    text-decoration: none;
+    margin-top: 0.5em;
+    transition: all ease 0.5s;
+}
+.footer-about>a:hover{
+    opacity: 0.8;
+}
+.email{
+    color: white;
+    font-size: 1.2em;
+}
+
+@media (max-width: 800px){
+    .passion_content{
+        flex-direction: column;
+    }
+    .passion_card{
+        max-width: 100%;
+    }
+    .icon{
+        max-width: 10em;
+    }
+    .skill-img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,88 @@
+.left_container{
+    width: 25vw;
+    overflow: hidden;
+}
+.heading_name{
+    font-size: 3em;
+    color: white;
+    width: 250px;
+    animation: 0.8s ease 1 textAnimate;
+}
+.heading_decor{
+    height: 0.05em;
+    width: 0.8em;
+    background-color: #ff4d5a;
+    margin-top: 0.2em;
+    transform: translateX(0.3em);
+}
+#decor2{
+    transform: translateX(0.8em);
+}
+
+.Descp {
+    font-size: 0.9em;
+    margin-top: 1em;
+    animation: 1s ease 1 textAnimate;
+    /* animation-delay: 0.3s; */
+    line-height: 115%;
+}
+.port {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #ff4d5a;
+    margin-top: 1em;
+    animation: 1s ease 1 textAnimate;
+    /* animation-delay: 0.3s; */
+}
+
+.btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    width: 130px;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    font-size: smaller;
+    border-radius: 1em;
+    transition: all ease 0.5s;
+    animation: 1s ease 1 textAnimate;
+}
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 5px #0000003c;
+}
+
+@keyframes textAnimate {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translate(0%);
+    }
+}
+
+@media (max-width:800px) {
+    .left_container{
+        width: 100%;
+    }
+    .heading_name{
+        font-size: 3.5em;
+    }
+    
+    .Descp {
+        font-size: 1.5em;
+    }
+    .port {
+        font-size: 1.7em;
+    }
+    .btn{
+        font-size: larger;
+    }
+}
+
