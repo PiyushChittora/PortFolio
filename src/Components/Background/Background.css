@@ -45,6 +45,7 @@
 
 .moon{
   transition: all ease 0.3s;
+  transition: transform ease 1s;
 }
 
 .atHome{

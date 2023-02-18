@@ -15,7 +15,7 @@ export default function Navbar() {
           <a href="https://github.com/PiyushChittora">
             <img src={github} alt="" className="github" />
           </a>
-          <a href="" className="resume">
+          <a href="https://drive.google.com/file/d/1arLr2pa8f2FNuHa-2m0ri8Ixl_cEMqjE/view?usp=sharing" className="resume">
             <div className="resume-text">My Resume</div>
           </a>
         </div>
